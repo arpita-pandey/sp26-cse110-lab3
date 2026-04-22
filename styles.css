@@ -472,3 +472,119 @@ nav li {
     left: 0;
   }
 }
+
+/* ============================================
+   Selector coverage
+   ============================================ */
+
+/* --- Universal selector --- */
+* {
+  box-sizing: border-box;
+}
+
+/* --- Element selector --- */
+/* Already used throughout: body, h1, h2, h3, header, footer, etc. */
+
+/* --- ID selector --- */
+/* Already used: #agenda, #attendance, #new, #comments, #feedback */
+
+/* --- Class selector --- */
+/* Add a class to something for coverage. Easiest: style figure captions. */
+.caption-note {
+  font-style: italic;
+  color: dimgray;
+  font-size: 0.9rem;
+}
+
+/* --- Attribute selector --- */
+/* Style all text-type inputs */
+input[type="text"] {
+  border: 1px solid var(--primary-color);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Style the audio element by its controls attribute */
+audio[controls] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* --- Pseudo-class selector --- */
+/* Already used: nav a:hover, button:active, etc. */
+
+/* --- Selector list --- */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* --- Combinators --- */
+
+/* Descendant combinator: any <a> inside <footer> */
+footer a {
+  color: var(--primary-color);
+}
+
+/* Child combinator: <li> that is a DIRECT child of an ordered list */
+ol > li {
+  margin-bottom: 8px;
+}
+
+/* Adjacent sibling: <p> immediately after an <h3> */
+h3 + p {
+  margin-top: 5px;
+  font-size: 1.05rem;
+}
+
+/* General sibling: any <p> that follows an <h2> within the same parent */
+h2 ~ p {
+  line-height: 1.6;
+}
+
+/* Combining selectors: input that has type="text" AND is the favorite flavor field */
+input[type="text"]#flavor {
+  background-color: rgba(214, 74, 122, 0.05);
+}
+
+/* Combined element.class (the checklist item) */
+p.highlight {
+  background-color: lavender;
+  padding: 5px;
+}
+
+/* --- :has() — new selector --- */
+/* Highlight any section that contains a form */
+section:has(form) {
+  background-color: rgba(214, 74, 122, 0.05);
+  border-radius: 8px;
+  padding: 15px;
+}
+
+/* Style figures that contain images specifically */
+figure:has(img) {
+  border: 2px solid var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* --- Nested selector --- */
+#feedback {
+  margin-top: 30px;
+
+  & fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  & legend {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+
+  & button {
+    margin-top: 15px;
+  }
+}
