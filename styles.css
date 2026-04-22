@@ -399,3 +399,76 @@ nav li {
   text-align: center;
   /* width: 100%; ← DELETE THIS LINE */
 }
+
+/* ============================================
+   Media Queries — responsive layout
+   ============================================ */
+
+/* Tablet and smaller laptops */
+@media (max-width: 1024px) {
+  body {
+    padding: 15px;
+  }
+
+  main {
+    width: 95%;
+  }
+
+  /* Attendees grid: 2 columns instead of 3 */
+  #attendance ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  header {
+    min-height: auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Nav stacks vertically on phones */
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  /* Attendees grid: single column */
+  #attendance ul {
+    grid-template-columns: 1fr;
+  }
+
+  /* Form controls shrink to fit */
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  /* Images scale down */
+  figure img,
+  video {
+    max-width: 100%;
+  }
+
+  /* Disable position:relative nudge on subtitle */
+  header p {
+    top: 0;
+    left: 0;
+  }
+}
