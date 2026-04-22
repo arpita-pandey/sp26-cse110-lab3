@@ -201,11 +201,6 @@ header p {
   color: #FFF;
 }
 
-/* text-decoration: underline navigation links */
-nav a {
-  color: #FFF;
-  text-decoration: underline;
-}
 
 /* text-decoration: remove underline from footer email link */
 footer a {
@@ -221,4 +216,39 @@ footer {
 /* Headings get a slightly heavier weight */
 h1, h2, h3 {
   font-weight: 600;
+}
+
+/* ============================================
+   Display property — experiment with values
+   ============================================ */
+
+/* inline-block: nav list items sit side-by-side with proper spacing */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 5px 10px;
+}
+
+/* block: force anchor tags (normally inline) to behave as blocks inside nav */
+/* text-decoration: underline navigation links */
+nav a {
+  display: block;
+  color: #FFF;
+  text-decoration: underline;
+}
+
+/* inline: attendee names flow inline instead of bullet points */
+#attendance li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* none: hide the <hr> elements since we have borders doing that work */
+hr {
+  display: none;
 }
