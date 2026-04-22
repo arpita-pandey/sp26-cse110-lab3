@@ -315,3 +315,39 @@ header p {
   top: 5px;
   left: 10px;
 }
+
+/* ============================================
+   Pseudo-classes — :hover and :active
+   ============================================ */
+
+/* :hover — nav links change background and brighten on hover */
+nav a:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* :active — nav link dims when being clicked */
+nav a:active {
+  background-color: lavender;
+  color: #333;
+}
+
+/* :hover on submit button */
+button[type="submit"]:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* :active on submit button — darker press effect */
+button[type="submit"]:active {
+  background-color: hsl(330, 60%, 30%);
+  transform: translateY(1px);
+}
+
+/* :hover on section headings for a playful effect */
+h3:hover {
+  color: var(--primary-color);
+  cursor: default;
+}
