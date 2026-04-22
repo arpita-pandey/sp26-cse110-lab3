@@ -7,14 +7,6 @@ assignees: arpita-pandey
 
 ---
 
----
-name: CSS Task
-about: A styling or CSS checklist task for Lab 3
-title: "[CSS] "
-labels: css, lab3
-assignees: ''
----
-
 ## Category
 <!-- Which checklist section does this cover? e.g. Flexbox, Grid, Media Query, Selectors, Box Model, Fonts, Validation -->
 
@@ -28,6 +20,3 @@ assignees: ''
 
 ## Files affected
 <!-- e.g. styles.css, index.html -->
-
-## Reference
-<!-- MDN link or docs you're using -->
