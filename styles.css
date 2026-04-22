@@ -69,3 +69,49 @@ h3 {
 footer {
   color: dimgray;
 }
+
+/* ============================================
+   Units — 3 relative + 3 absolute
+   ============================================ */
+
+/* Relative units */
+
+/* rem: scales with root font size */
+body {
+  font-size: 1rem;
+  max-width: 60rem;
+}
+
+/* em: scales with element's own font size */
+h2 {
+  padding: 0.5em 1em;
+}
+
+/* % : relative to parent width */
+main {
+  width: 90%;
+  margin: auto;
+}
+
+/* vw: viewport width — hero banner spans full screen width */
+header {
+  min-height: 15vh;
+}
+
+/* Absolute units */
+
+/* px: crisp 1-pixel border */
+section {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* pt: typography sizing */
+footer {
+  font-size: 10pt;
+}
+
+/* in: fixed width on form area */
+form {
+  max-width: 6in;
+}
