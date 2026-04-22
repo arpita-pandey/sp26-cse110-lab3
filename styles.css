@@ -351,3 +351,27 @@ h3:hover {
   color: var(--primary-color);
   cursor: default;
 }
+
+
+/* ============================================
+   Flexbox — nav list
+   3+ children, 3+ flex properties
+   ============================================ */
+
+/* Flex container on the nav list */
+nav ul {
+  display: flex;                    /* 1. activate flexbox */
+  flex-direction: row;              /* 2. horizontal layout */
+  justify-content: space-around;    /* 3. distribute items evenly */
+  align-items: center;              /* 4. vertically center */
+  flex-wrap: wrap;                  /* 5. wrap to next line on small screens */
+  gap: 10px;                        /* 6. space between items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove the old inline-block margin trick since flexbox handles spacing */
+nav li {
+  margin-right: 0;
+}
