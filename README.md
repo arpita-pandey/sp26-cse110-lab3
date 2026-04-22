@@ -1,2 +1,1 @@
-# Lab 2 - Starter
-Published site: https://arpita-pandey.github.io/Lab2_Starter/
+Published site: https://arpita-pandey.github.io/sp26-cse110-lab3/
