@@ -1,0 +1,71 @@
+/* ============================================
+   Team Cupcake Meeting Notes — Stylesheet
+   Covers: colors, backgrounds, CSS variables
+   ============================================ */
+
+/* CSS variables defined on :root so they're globally available */
+:root {
+  --primary-color: #d64a7a;         /* cupcake pink */
+  --text-color: rgb(40, 40, 40);
+}
+
+/* Body uses a named color for background */
+body {
+  background-color: lavender;
+  color: var(--text-color);
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+/* Header uses a CSS variable WITH a fallback */
+/* --brand-color is never defined, so it falls back to steelblue */
+header {
+  background-color: var(--brand-color, steelblue);
+  color: #FFF;                      /* hex shorthand */
+  padding: 20px;
+}
+
+/* Main title uses full hex */
+h1 {
+  color: #FFFFFF;
+}
+
+/* Subheadings use RGB */
+h2 {
+  color: rgb(80, 20, 60);
+}
+
+/* Section titles use HSL */
+h3 {
+  color: hsl(330, 60%, 35%);
+}
+
+/* Agenda section uses HSLA for translucent background */
+#agenda {
+  background-color: hsla(330, 80%, 90%, 0.6);
+  padding: 15px;
+}
+
+/* Attendance uses RGBA for a faint tint */
+#attendance {
+  background-color: rgba(214, 74, 122, 0.1);
+  padding: 15px;
+}
+
+/* New Business uses wider-gamut color() for vibrant accent */
+#new {
+  color: color(display-p3 0.85 0.2 0.4);
+  background-color: #fff;
+  padding: 15px;
+}
+
+/* Comments section uses color-mix() for a muted background */
+#comments {
+  background-color: color-mix(in srgb, var(--primary-color) 15%, white);
+  padding: 15px;
+}
+
+/* Footer uses a named color */
+footer {
+  color: dimgray;
+}
