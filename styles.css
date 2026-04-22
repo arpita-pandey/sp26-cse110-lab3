@@ -295,3 +295,23 @@ video {
   width: 100%;
   height: auto;
 }
+
+/* ============================================
+   Position — 2 values applied
+   ============================================ */
+
+/* sticky: navigation stays pinned when scrolling */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--primary-color);
+  padding: 10px;
+  z-index: 10;
+}
+
+/* relative: nudge the subtitle slightly without affecting layout */
+header p {
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
