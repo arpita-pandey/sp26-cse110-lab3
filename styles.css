@@ -115,3 +115,60 @@ footer {
 form {
   max-width: 6in;
 }
+
+
+/* --- MARGIN --- */
+
+/* Longhand margin on main heading */
+h1 {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+/* Shorthand margin on section headings */
+h3 {
+  margin: 15px 0 10px 0;
+}
+
+/* Auto margin to center the main content horizontally */
+main {
+  margin: auto;
+}
+
+/* --- PADDING --- */
+
+/* Longhand padding on attendance section */
+#attendance {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+/* Shorthand padding on agenda section */
+#agenda {
+  padding: 15px 25px;
+}
+
+/* --- BORDERS --- */
+
+/* Longhand border on new business section */
+#new {
+  border-style: solid;
+  border-color: #d64a7a;
+  border-width: 2px;
+  border-radius: 8px;
+}
+
+/* Shorthand border on comments section */
+#comments {
+  border: 3px dashed steelblue;
+  border-radius: 12px;
+}
+
+/* Border on header for visual separation */
+header {
+  border-bottom: 4px solid #fff;
+}
