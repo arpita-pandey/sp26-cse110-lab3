@@ -4,6 +4,7 @@
    ============================================ */
 
 /* CSS variables defined on :root so they're globally available */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 :root {
   --primary-color: #d64a7a;         /* cupcake pink */
   --text-color: rgb(40, 40, 40);
@@ -13,7 +14,7 @@
 body {
   background-color: lavender;
   color: var(--text-color);
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;  /* Poppins with sans-serif fallback */
   margin: 20px;
 }
 
@@ -171,4 +172,53 @@ main {
 /* Border on header for visual separation */
 header {
   border-bottom: 4px solid #fff;
+}
+
+/* ============================================
+   Text styling + Google Font
+   ============================================ */
+
+/* Apply Google Font to the whole page */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* color + text-align on main heading */
+h1 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* color + text-align on section headings */
+h2 {
+  color: rgb(80, 20, 60);
+  text-align: left;
+}
+
+/* Center the subtitle under the main heading */
+header p {
+  text-align: center;
+  color: #FFF;
+}
+
+/* text-decoration: underline navigation links */
+nav a {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+/* text-decoration: remove underline from footer email link */
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* text-align: right on footer */
+footer {
+  text-align: right;
+}
+
+/* Headings get a slightly heavier weight */
+h1, h2, h3 {
+  font-weight: 600;
 }
